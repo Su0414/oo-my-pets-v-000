@@ -77,7 +77,7 @@ class Owner
         return " "
       end 
       
-       @pets.collect do |type, each_pets| 
+       @pets.map do |type, each_pets| 
         each_pets.map do |pet|
              pet.mood = "nervous"
           end
